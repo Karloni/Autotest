@@ -10,7 +10,7 @@ public class Main {
     @Test
     public void MessageBody()
 {
-    RestAssured.baseURI = "https://reqres.in/";
+    RestAssured.baseURI = "https://demowebshop.tricentis.com/";
     RequestSpecification httpRequest = RestAssured.given();
     Response response = httpRequest.get();
 
