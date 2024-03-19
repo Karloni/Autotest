@@ -7,16 +7,18 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.Test;
 
 public class Main {
+
+    public String URI = "https://reqres.in/"
     @Test
     public void MessageBody()
 {
-    RestAssured.baseURI = "https://demowebshop.tricentis.com/";
-    RequestSpecification httpRequest = RestAssured.given();
-    Response response = httpRequest.get();
+    RestAssured.baseURI = URI;
+    String BodyAsString = RestAssured.given()
+                                     .body("")
+                                     .post("/api/users")
+                                     .then()
+                                     .statusCode(HttpStatus.SC_CREATED);;
 
-    ResponseBody body = response.getBody();
-
-    String bodyAsString = body.asString();
 
 }
 }
