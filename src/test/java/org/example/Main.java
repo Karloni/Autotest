@@ -14,7 +14,10 @@ public class Main {
 {
     RestAssured.baseURI = URI;
 
-    String bodyAsString = RestAssured.given().get("/api/users/2").getBody().asString();
+    String bodyAsString = RestAssured.given()
+                                     .get("/api/users/2")
+                                     .getBody()
+                                     .asString();
     System.out.println(bodyAsString);
 }
 }
