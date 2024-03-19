@@ -17,7 +17,7 @@ public class Main {
                                      .body("")
                                      .post("/api/users")
                                      .then()
-                                     .statusCode(HttpStatus.SC_CREATED);;
+                                     .statusCode(?);;
 
 
 }
