@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class Main {
 
-    public String URI = "https://reqres.in/"
+    public String URI = "https://reqres.in/";
     @Test
     public void MessageBody()
 {
